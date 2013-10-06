@@ -34,7 +34,8 @@
            sync-j="4" />
 
   <!-- CM -->
-  <project path="build" name="soupy031/android_build" remote="github" revision="cm-10.2" groups="pdk" >
+  <project path="build" name="soupy031/android_build"  revision="cm-10.2" groups="pdk" >
+    <copyfile src="core/root.mk" dest="Makefile" />
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="android_abi_cpp" remote="cm" groups="pdk" />
@@ -428,5 +429,12 @@
   <project path="vendor/pac" name="android_vendor_pac" remote="pac" >
     <copyfile src="tools/build-pac.sh" dest="build-pac.sh" />
   </project>
+  <project name="CyanogenMod/android_device_samsung_hercules" path="device/samsung/hercules" remote="github" revision="cm-10.2" />
+  <project name="CyanogenMod/android_device_samsung_skyrocket" path="device/samsung/skyrocket" remote="github" revision="cm-10.2" />
+  <project name="CyanogenMod/android_device_samsung_celox-common" path="device/samsung/celox-common" remote="github" revision="cm-10.2" />
+  <project name="CyanogenMod/android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" revision="cm-10.2" />
+  <project name="soupy031/HERC-KERNELS" path="kernel/samsung/msm8660-common" remote="github" revision="diablo-jb43" />
+  <project name="thdDude/android_device_samsung_msm8660-common" path="device/samsung/msm8660-common" remote="github" revision="cm-10.2" />
+  <project name="CyanogenMod/android_hardware_samsung" path="hardware/samsung" remote="github" revision="cm-10.2" />
 
 </manifest>
