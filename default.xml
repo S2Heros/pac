@@ -36,7 +36,6 @@
   <!-- CM -->
   <project path="build" name="soupy031/android_build"  revision="cm-10.2" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
-    <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="android_abi_cpp" remote="cm" groups="pdk" />
   <project path="bionic" name="android_bionic" remote="cm" groups="pdk" />
