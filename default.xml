@@ -425,7 +425,7 @@
   <project path="system/core" name="android_system_core" remote="pac" />
   <project path="vendor/pac" name="android_vendor_pac" remote="pac" >
     <copyfile src="tools/build-pac.sh" dest="build-pac.sh" />
-  
+    </project>
   <project path="android" name="S2Heros/pac" />
   <project path="prebuilts/gcc/linux-x86/arm/Linaro-4.8" name="soupy031/LINARO" remote="github" revision="master" />
   <project path="device/samsung/hercules" name="CyanogenMod/android_device_samsung_hercules" remote="github" revision="cm-10.2" />
@@ -435,4 +435,5 @@
   <project path="kernel/samsung/msm8660-common" name="soupy031/HERC-KERNELS" remote="github" revision="diablo-jb43" />
   <project path="devices/samsung/msm8660-common" name="thdDude/android_device_samsung_msm8660-common" remote="github" revision="cm-10.2" />
   <project path="hardware/samsung" name="CyanogenMod/android_hardware_samsung" remote="github" revision="cm-10.2" />
+
 </manifest>
